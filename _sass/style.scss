@@ -4,10 +4,10 @@
   &-container{
     margin: 0 auto;
     font-weight: bolder;
-    text-decoration: none;
     
     &>a{
       color:#000;
+      text-decoration: none;
     }
   }
 }
