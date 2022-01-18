@@ -1,7 +1,15 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.min.css);
+
+$fira:      "Fira Code";
+
 $primary: #00C795;
 $white: #fff;
 $black: #000;
 $grey: #eee;
+
+*{
+  font-famaily: $fira;
+}
 
 html,body{
   margin: 0;
