@@ -1,14 +1,48 @@
-.footer{
-  display: flex;
+$primary: #00C795;
+$white: #fff;
+$black: #000;
+$grey: #eee;
+
+.invite{
+  display:flex;
+  height: 100vh;
   
   &-container{
-    margin: 0 auto;
-    font-weight: bolder;
+    margin: auto;
+  }
+  
+  &-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -1px 0 3px #e7ebe9, 1px 0 3px #e7ebe9, 0 -1px 1px #eef3f1, 0 1px 5px #dce1df;
     
-    &>a{
-      color:#000;
-      text-decoration: none;
+    &-title{
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 auto 20px auto;
     }
+    
+    &-content{
+      display: flex;
+      
+      &-input{
+        background: $grey;
+        &>input{
+          border: none;
+          padding: 8px;
+          background: $grey;
+          width: 250px;
+        }
+      }
+      
+      &-btn{
+        width: 100%;
+        height: auto;
+        color: $white;
+        background: $primary;
+        font-weight: bold;
+        padding: 8px;
   }
 }
-    
