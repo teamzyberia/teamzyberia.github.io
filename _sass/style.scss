@@ -4,7 +4,7 @@ $black: #000;
 $grey: #eee;
 
 .invite{
-  display:flex;
+  display: flex;
   height: 100vh;
   
   &-container{
@@ -44,5 +44,7 @@ $grey: #eee;
         background: $primary;
         font-weight: bold;
         padding: 8px;
+      }
+    }
   }
 }
