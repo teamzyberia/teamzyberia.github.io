@@ -2,10 +2,12 @@ $primary: #00C795;
 $white: #fff;
 $black: #000;
 $grey: #eee;
+$grey-light: #f8f8f8;
 
 html,body{
   margin: 0;
   padding: 0;
+  background: $grey-light;
 }
 
 .invite{
@@ -21,6 +23,7 @@ html,body{
     flex-direction: column;
     padding: 20px;
     border-radius: 8px;
+    background: $white;
     box-shadow: -1px 0 3px #e7ebe9, 1px 0 3px #e7ebe9, 0 -1px 1px #eef3f1, 0 1px 5px #dce1df;
     
     &-title{
