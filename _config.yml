@@ -1,3 +1,15 @@
-theme: jekyll-theme-hacker
+title: "Team Zyberia"
+keywords: "Game, Zyberia, Zyber, Team Zyberia"
+description: " Human, Developer, also Gamer."
+url: "https://teamzyberia.github.io"
 
-title: Team Zyberia
+permalink: pretty
+
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
