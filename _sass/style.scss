@@ -3,6 +3,11 @@ $white: #fff;
 $black: #000;
 $grey: #eee;
 
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
 .invite{
   display: flex;
   height: 100vh;
