@@ -14,10 +14,10 @@ function invite(email){
     axios
       .post(`https://api.github.com/orgs/${org}/invitations`, { email: email })
       .then((response) =>
-        console.log(
+        alert(
           response.status === 201
-            ? "Send to " + email + ": Success"
-            : "Send to " + email + ": Failed"
+            ? "Success"
+            : "Failed"
         )
       )
       .catch((error) => console.log(error));
