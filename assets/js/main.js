@@ -11,5 +11,14 @@ function invite(email){
     const org = "teamzyberia";
     axios.defaults.headers.common["Accept"] = "application/vnd.github.v3+json";
     axios.defaults.headers.common["Authorization"] = `token ${token}`;
-    axios.post(`https://api.github.com/orgs/${org}/invitations`, { email: email });
+    axios
+      .post(`https://api.github.com/orgs/${org}/invitations`, { email: email })
+      .then((response) =>
+        console.log(
+          response.status === 201
+            ? "Send to " + email + ": Success"
+            : "Send to " + email + ": Failed"
+        )
+      )
+      .catch((error) => console.log(error));
 }
