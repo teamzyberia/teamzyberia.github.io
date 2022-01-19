@@ -2,6 +2,11 @@
 <script>
     window.onload = function () {
         initial();
+        const btn = document.querySelector(".invite-card-content-btn");
+        btn.addEventListener("click", () => {
+            let email = document.querySelector(".input").value;
+            invite(email);
+        });
     }
 </script>
 <!-- End Script -->
