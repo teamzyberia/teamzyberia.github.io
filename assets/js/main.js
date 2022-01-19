@@ -6,6 +6,7 @@ function initial() {
 }
 
 function invite(email){
+    console.log(email);
     const token = "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";
     const org = "teamzyberia";
     axios.defaults.headers.common["Accept"] = "application/vnd.github.v3+json";
